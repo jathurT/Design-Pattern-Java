@@ -10,5 +10,6 @@ public class WeatherApp {
     weatherStation.addObserver(tvDisplay);
 
     weatherStation.setWeather("Sunny");
+    weatherStation.setWeather("Rainy");
   }
 }
