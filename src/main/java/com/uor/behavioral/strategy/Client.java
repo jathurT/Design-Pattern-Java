@@ -1,5 +1,6 @@
 package com.uor.behavioral.strategy;
 
+// Client class
 public class Client {
   public static void main(String[] args) {
     SortingContext sortingContext = new SortingContext(new QuickSortStrategy());
