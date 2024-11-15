@@ -1,4 +1,5 @@
 package com.uor.structural.decorator;
+
 //  Decorator
 public class CoffeeDecorator implements Coffee {
   protected Coffee decoratedCoffee;
