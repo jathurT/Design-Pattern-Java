@@ -16,5 +16,8 @@ public class Main {
 
     Coffee sugarMilkSyrupCoffee = new SyrupDecorator(milkSugarCoffee);
     System.out.println("Cost: " + sugarMilkSyrupCoffee.getCost() + "; Description: " + sugarMilkSyrupCoffee.getDescription());
+
+    Coffee coffee1 = new CoffeeDecorator(new SugarDecorator(new MilkDecorator(new PlainCoffee())));
+    System.out.println("Cost: " + coffee1.getCost() + "; Description: " + coffee1.getDescription());
   }
 }

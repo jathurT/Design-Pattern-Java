@@ -1,19 +1,19 @@
 package com.uor.structural.decorator;
 //  Decorator
 public class CoffeeDecorator implements Coffee {
-  protected Coffee coffee;
+  protected Coffee decoratedCoffee;
 
-  public CoffeeDecorator(Coffee coffee) {
-    this.coffee = coffee;
+  public CoffeeDecorator(Coffee decoratedCoffee) {
+    this.decoratedCoffee = decoratedCoffee;
   }
 
   @Override
   public String getDescription() {
-    return coffee.getDescription();
+    return decoratedCoffee.getDescription();
   }
 
   @Override
   public Double getCost() {
-    return coffee.getCost();
+    return decoratedCoffee.getCost();
   }
 }

@@ -7,11 +7,11 @@ public class SyrupDecorator extends CoffeeDecorator {
 
   @Override
   public String getDescription() {
-    return coffee.getDescription() + ", Syrup";
+    return decoratedCoffee.getDescription() + ", Syrup";
   }
 
   @Override
   public Double getCost() {
-    return coffee.getCost() + 0.5;
+    return decoratedCoffee.getCost() + 0.5;
   }
 }
