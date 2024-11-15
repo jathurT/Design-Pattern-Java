@@ -3,7 +3,7 @@ package com.uor.structural.proxy;
 public class AuthenticationProxyImage implements Image {
 
   private ProxyImage proxyImage;
-  private Boolean isAuthenticated;
+  private final Boolean isAuthenticated;
 
   public AuthenticationProxyImage(Boolean isAuthenticated) {
     this.isAuthenticated = isAuthenticated;
