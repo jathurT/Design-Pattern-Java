@@ -5,7 +5,7 @@ import java.util.List;
 
 // Concrete Subject
 public class WeatherStation implements Subject {
-  private List<Observer> observers = new ArrayList<>();
+  private final List<Observer> observers = new ArrayList<>();
   private String weather;
 
   @Override
