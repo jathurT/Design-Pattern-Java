@@ -5,6 +5,10 @@ public class SortingContext {
 
   private SortingStrategy sortingStrategy;
 
+  public SortingContext() {
+
+  }
+
   public SortingContext(SortingStrategy sortingStrategy) {
     this.sortingStrategy = sortingStrategy;
   }
